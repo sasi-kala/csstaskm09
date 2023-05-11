@@ -1,0 +1,32 @@
+.container
+{
+	width:600px;
+	margin:0 auto;
+	background-color: lightblue;
+}
+.box
+{
+	width: 200px;
+	height: 200px;
+`	padding: 20px;
+	border:2px solid #000;
+	margin-bottom: 20px;
+	background-color: #ccc;
+	box-sizing: border-box;
+	float:left;
+}
+.box:nth-child(2n)
+{
+	margin-left: 20px;
+	margin-right: 0;
+}
+.box:nth-child(2n+1)
+{
+	margin-right: 20px;
+}
+.clearfix::after
+{
+	content:"";
+	display: table;
+	clear:both;
+}
